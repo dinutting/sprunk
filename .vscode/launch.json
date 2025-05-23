@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'sprunk'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=sprunk",
+                    "--package=sprunk"
+                ],
+                "filter": {
+                    "name": "sprunk",
+                    "kind": "bin"
+                }
+            },
+            "args": ["sample.csv"],
+            "stdio": "input.txt",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'sprunk'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=sprunk",
+                    "--package=sprunk"
+                ],
+                "filter": {
+                    "name": "sprunk",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+/Users/danny/Documents/Programming/Rust/sprunk/target/debug/sprunk: /Users/danny/Documents/Programming/Rust/sprunk/src/lexer.rs /Users/danny/Documents/Programming/Rust/sprunk/src/lib.rs /Users/danny/Documents/Programming/Rust/sprunk/src/main.rs
